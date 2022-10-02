@@ -151,7 +151,7 @@ footer
     font-weight: 500;
     letter-spacing: 2px;
     border-radius: 60px;
-    transform: translateY(100px);
+    transform: translateY(140px);
     opacity: 0.8;
 }
 #btn:hover
@@ -187,7 +187,7 @@ footer
 {
     width: auto;
     height: auto;
-    margin-left: 500px;
+    margin-left: 40%;
     margin-top: 120px;
     z-index: 0;
 }
@@ -195,8 +195,8 @@ footer
 {
     max-width: 900px;
     max-height: 1000px;
-    margin-left: 1100px;
-    top: 300px;
+    margin-left: 55%;
+    top: 30%;
 }
 #starTypes{
     text-align: center;
@@ -262,18 +262,17 @@ footer
   
 .grid-item 
 {
-    color: blue;
+    color: #ffff;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    text-decoration: none;
   }
-
-  .starsText
+.starsText
   {
     text-align: center;
   }
-
-  .ExploreButton
+.ExploreButton
 {
     
     color: #fff;
@@ -286,21 +285,21 @@ footer
     z-index: 1000;
     margin: auto;
 }
+.ExploreButton a
+{
+    text-decoration: none;
+    color: cyan;
+}
 .ExploreButton:hover
 {
     background: #fff;
     color: #FF0000;
 }
-
-
 .ml9 {
     position: relative;
     font-weight: 200;
     font-size: 4em;
-
-
   }
-  
   .ml9 .text-wrapper {
     position: relative;
     display: inline-block;
@@ -309,7 +308,6 @@ footer
     padding-bottom: 0.1em;
     overflow: hidden;
   }
-  
   .ml9 .letter {
     
     transform-origin: 50% 100%;
