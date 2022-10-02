@@ -27,7 +27,14 @@
         <section>
             <img src="images/stars.png" alt="bg">
             
-            
+            <div id="objectAction">
+                <form id="Hscroller">
+                <input id="slider" type="range" value="1" min="1" max="50" oninput="this.nextElementSibling.value = this.value"  >
+                <output>1</output>
+                <input type="reset" value="Reset" id="resetButton"/>
+                <input type="submit" value="End" id="endbutton"/>
+                </form>
+            </div>
             <div class="grid-container">
                 <div class="grid-item"> </div>
                 <div class="grid-item"> 
@@ -43,27 +50,26 @@
                 <div class="grid-item">
                   
                 </div>
-                <div class="grid-item" style="grid-column: 1 / span 3;">The large pulsating stars which are yellow in color, are the first star identified out of the stellar group Delta Cephei. 
+                <div class="grid-item" style="grid-column: 1 / span 3;" >The large pulsating stars which are yellow in color, are the first star identified out of the stellar group Delta Cephei. 
                     This star rapidly rises to the maximum level of light and then gradually falls back to a minimum level of light. 
                     The whole cycle takes approximately 5.4 days to complete one cycle. Over several hundreds of cepheid variable stars are known in our very own Milky Way Galaxy.
                      Most of the cepheid stars have their periods which are in the range of about 3 to 50 days.
                       The luminosity of these stars is about 1000 to 10,000 times more than the luminosity or the light of the sun which also refers to its brightness. </div>
-                      <div class="grid-item">
-                        yes
+                      <div class="grid-item" style="font-size: 24px;">
+                        The North Star, also known as the Polaris is a kind of cepheid variable that has varied in terms of its brightness or luminosity for about one-tenth of its magnitude which is about 10 percent of the visual luminosity. 
+                        This whole cycle takes place in just four days. Being a cepheid variable star is a stage in the life cycle of any star. 
                   </div>
               
                   <div class="grid-item">
-                        no
+                        <canvas id="c1"></canvas>
                   </div>
-                  <div class="grid-item">
-                        Yes
-                  </div>
+                  
               </div>
               
         </section>
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="module" src="./JS/index.js"></script>
+        <script type="module" src="./JS/index2.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="./TextAnimation/TextAnimation.js"></script>
     </body>
