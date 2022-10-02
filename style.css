@@ -268,13 +268,14 @@ footer
     text-align: center;
   }
 
-.starsText
-{
+  .starsText
+  {
     text-align: center;
-}
+  }
 
-.ExploreButton
-{ 
+  .ExploreButton
+{
+    
     color: #fff;
     border-radius:50px;
     padding: 6px 15px;
@@ -290,24 +291,28 @@ footer
     background: #fff;
     color: #FF0000;
 }
-.ml9 
-{
+
+
+.ml9 {
     position: relative;
     font-weight: 200;
     font-size: 4em;
-} 
-.ml9 .text-wrapper 
-{
+
+
+  }
+  
+  .ml9 .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-}  
-.ml9 .letter 
-{    
+  }
+  
+  .ml9 .letter {
+    
     transform-origin: 50% 100%;
     display: inline-block;
     line-height: 1em;
-} 
+  }
