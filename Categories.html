@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MAP</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +36,15 @@
             </div>
             
       <div class="grid-container">
+        <div class="grid-item" style="grid-column: 1 / span 3;"> 
+          <h1 class="ml9" style=>
+              <span class="text-wrapper">
+                <span class="letters" style="font-size: 56px ;">Categories of Stars
 
+                </span>
+              </span>
+            </h1>
+      </div>
         <div class="grid-item">
           <h3 class="starsText">Intrinsic:</h3>
         </div>
@@ -44,9 +53,9 @@
           <h3 class="starsText">Extrinsic:</h3>
         </div>
 
-        <div class="grid-item"><canvas id="c1"></canvas></div>
-        <div class="grid-item"></div>
         <div class="grid-item"><canvas id="c2"></canvas></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"><canvas id="c1"></canvas></div>
         <div class="grid-item">
           <p>
             Physical changes within or on the surface of the star cause the brightness of the star to vary.
@@ -81,5 +90,6 @@
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script type="module" src="./JS/index.js"></script>
+        <script src="./TextAnimation/TextAnimation.js"></script>
     </body>
 </html>
