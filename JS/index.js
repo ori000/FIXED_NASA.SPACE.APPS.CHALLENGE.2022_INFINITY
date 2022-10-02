@@ -124,9 +124,12 @@ let rate;
 
 rate=0.4;
 var x=0;
+var y=0;
+var t=0;
 //animation loop
 const animate = () => {
 
+  
   //bloomPass.strength = 2; //intensity of glow
   requestAnimationFrame(animate);
   
@@ -135,8 +138,11 @@ const animate = () => {
   else if(bloomPass.strength<2)
     rate=0.1;*/
   bloomPass.strength=Math.abs(10*Math.cos(x));
-  bloomPass2.strength=Math.abs(10*Math.sin(x));
+  //bloomPass2.strength=Math.abs(10*Math.sin(x));
+  bloomPass2.strength=Math.abs(y);
   x+=(0.05) * multiplier.value/10;
+  t+=0.005* multiplier.value/10
+  y=cepheidRate(t,5)*10;
   //x+=cepheidRate(x+ multiplier.value/1000,200);
   //console.log(cepheidRate(x,5));
   starMesh.rotation.y += 0.01;
