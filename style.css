@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900@display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    background: #0000;
+    min-height: 100vh;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+section::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #fb0000, transparent);
+
+}
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+section #text
+{
+    content: '';
+    position: absolute;
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Oswald', sans-serif;
+    transform: translateY(-50%);
+    background: linear-gradient(to top, #FC0000, transparent);
+    border-radius: 20px;
+    z-index: 10;
+}
+section #text span
+{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+button
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius:50px;
+    padding: 6px 15px;
+    display: flex;
+    background-color: #FF0000;
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1000;
+}
+button:hover
+{
+    background: #fff;
+    color: #FF0000;
+}
+footer
+{
+    background-image: url("images/stars.png");
+    background-color: #000;
+}
+
+#header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#header .logo
+{
+    color: #FF0000;
+    font-weight: 700;
+    text-decoration: none;
+}
+#header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a 
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active
+{
+    background: #fff;
+    color: #FF0000;
+}
+#Infinity
+{
+    border-radius: 160px;
+    max-width: 240px;
+    max-height: 200px;
+    display: flex;
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+}
+#btn
+{
+    text-decoration: none;
+    padding: 8px 30px;
+    background: #fff;
+    color: #a1a1FF;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 60px;
+    transform: translateY(100px);
+    opacity: 0.8;
+}
+#btn:hover
+{
+    color: #FF0000;
+    opacity: 1;
+}
+#Hscroller
+{
+
+}
+#objectAction
+{
+    position: fixed;
+    top: 100px;
+    background-color: #ffff;
+    border-radius: 60px;
+    width: 250px;
+    text-align: center;
+    /* margin: 10px; */
+}
+#resetButton
+{
+    width: 40px;
+    background-color: #AA55BB;
+}
+#endButton
+{
+    width: 40px;
+    background-color: #fb0000;
+}
+#planet
+{
+    width: auto;
+    height: auto;
+    margin-left: 500px;
+    margin-top: 120px;
+    z-index: 0;
+}
+#rockets
+{
+    max-width: 900px;
+    max-height: 1000px;
+    margin-left: 1100px;
+    top: 300px;
+}
+#starTypes{
+    text-align: center;
+}
+
+.sec 
+{
+    position: relative;
+    padding: 100px;
+    background: #FF0000;
+    height: 60em;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 150px;
+}
+.sec p
+{
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-align:justify;
+    
+}
+.sec2
+{
+    position: relative;
+    padding: 100px;
+    background: #094b65;
+}
+.sec2 h3
+{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.sec2 p
+{
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+.sec2 li
+{
+    font-size: larger;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: auto ;
+    padding: 10px;
+  }
+  
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  
+.grid-item 
+{
+    color: blue;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.starsText
+{
+    text-align: center;
+}
+
+.ExploreButton
+{ 
+    color: #fff;
+    border-radius:50px;
+    padding: 6px 15px;
+    display: flex;
+    background-color: #FF0000;
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1000;
+    margin: auto;
+}
+.ExploreButton:hover
+{
+    background: #fff;
+    color: #FF0000;
+}
+.ml9 
+{
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+} 
+.ml9 .text-wrapper 
+{
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}  
+.ml9 .letter 
+{    
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+} 

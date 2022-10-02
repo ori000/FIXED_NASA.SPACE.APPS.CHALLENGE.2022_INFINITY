@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWINKLE TWINKLE LITTLE STAR</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Oswald:wght@600&family=Quicksand:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <a href="#" class="logo">
+                <img src="images/moon.png" alt="logo" id="Infinity">
+            </a>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="map.html">MAP</a></li>
+                <li><a href="collections.html">COLLECTIONS</a></li>
+                <li><a href="settings.html">SETTINGS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/stars.png" id="stars">
+            <h2 id="text"><span>TWINKLE, TWINKLE, LITTLE STAR</span><br>INFINITY</h2>
+            <img src="images/mountains_front.png" id="rockets">
+            <img src="images/mountains_behind.png" id="planet">
+            <a href="#" id="btn">EXPLORE</a>
+        </section>
+        <div class="sec">
+            <h2>BRIEFING</h2>
+            <p>
+                The night sky&apos;s variables are immensely diverse. These variables are constantly changing. 
+                Thanks to the Kepler Space Telescope and Transiting Exoplanet Survey Satellite created by NASA, humans were able to monitor many thousands of stars for years. 
+                However, such variations are very small and slow for the human to observe while looking up in the night sky with their naked eye. 
+                So, we came up with INFINITY. INFINITY simulates the space and stellar along with planetary physics using various functions &amp; mathematical equations. 
+                These simulations include the periodic change of brightness, lifespan, and rate of (change) of the star.
+            </p>
+            <br><br>
+            <p>
+                Infinity models the variables' that govern the brightness cycle of a star. How does it do that?
+                We used mathematical equations that describe these cycles. 
+                Thanks to THREEJS, JS, HTML, and CSS, we were able to create custom variables, stars, and rigorously specify their characteristics ranging from the rate of change of the brightness to the color based on data we researched from nasa and other sources. 
+                Our application is A Map visualizer that allows the user to observe the rate of change of the simulated stars and other planetary objects. 
+                Our fast forward time feature allows us to amplify the changes in stellar brightness making it a more accessible concept to the general public. 
+                We hope that this will promote space related concepts to a wider audience which will give more exposure and more interest in the field  
+            </p>
+        </div>
+        <script>
+            let text = document.getElementById('text');
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('Infinity');
+            let mountains_front = document.getElementById('rockets');
+            let mountains_behind = document.getElementById('planet');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function()
+            {
+                let value = window.scrollY;
+                text.style.top = 50 + value * -0.05 + '%';
+                stars.style.bottom = value * 2 + 'px';
+                moon.style.top = value * -1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+                mountains_front.style.bottom = value * -0.2 + 'px';
+                mountains_behind.style.left = value * -2 + 'px';
+            })
+        </script>
+    </body>
+</html>

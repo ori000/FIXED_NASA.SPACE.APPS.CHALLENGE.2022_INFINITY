@@ -1,0 +1,66 @@
+#c {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: -1;
+  }
+  .diagram {
+    display: inline-block;
+    width: 5em;
+    height: 3em;
+  }
+  .left {
+    float: left;
+    margin-right: .25em;
+  }
+  .right {
+    float: right;
+    margin-left: .25em;
+  }
+  p {
+    margin: 1em auto;
+    max-width: 500px;
+    font-size: xx-large;
+  }
+  
+  body {
+    margin: 40px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    padding: 10px;
+  }
+  
+  .grid-item {
+
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+
+  button
+{
+    
+    color: #fff;
+    border-radius:50px;
+    padding: 6px 15px;
+    display: flex;
+    background-color: #FF0000;
+    font-size: xx-large;
+    font-family: 'Oswald', sans-serif;
+    z-index: 1000;
+    margin: auto;
+}
+button:hover
+{
+    background: #fff;
+    color: #FF0000;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MAP</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Oswald:wght@600&family=Quicksand:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="logo">
+                <img src="images/moon.png" alt="logo" id="Infinity">
+            </h1>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="#">MAP</a></li>
+                <li><a href="collections.html">COLLECTIONS</a></li>
+                <li><a href="settings.html">SETTINGS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/stars.png" alt="bg">
+            <div id="objectAction">
+                <form id="Hscroller">
+                <input type="range" value="0" min="-50" max="50" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+                <input type="reset" value="Reset" id="resetButton"/>
+                <input type="submit" value="End" id="endbutton"/>
+                </form>
+            </div>
+            <div>
+                
+            </div>
+        </section>
+        
+    </body>
+</html>

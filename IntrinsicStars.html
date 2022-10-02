@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MAP</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Oswald:wght@600&family=Quicksand:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="logo">
+                <img src="images/moon.png" alt="logo" id="Infinity">
+            </h1>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="#">MAP</a></li>
+                <li><a href="collections.html">COLLECTIONS</a></li>
+                <li><a href="settings.html">SETTINGS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/stars.png" alt="bg">
+            <div id="objectAction">
+                <form id="Hscroller">
+                <input id="slider" type="range" value="0" min="0" max="50" oninput="this.nextElementSibling.value = this.value"  >
+                <output>0</output>
+                <input type="reset" value="Reset" id="resetButton"/>
+                <input type="submit" value="End" id="endbutton"/>
+                </form>
+            </div>
+            <h2 class="starsText">  Intrinsic star classes</h2>
+      <div class="grid-container">
+
+        <div class="grid-item">
+          <h3 class="starsText">Pulsating variable stars </h3>
+        </div>
+        <div class="grid-item"> <h3 class="starsText">Eruptive variable stars</h3></div>
+        <div class="grid-item"><h3 class="starsText">Cataclysmic variable stars
+        </h3></div>
+
+        <div class="grid-item"><canvas id="c1"></canvas></div>
+        <div class="grid-item"><canvas id="c1"></canvas></div>
+        <div class="grid-item"><canvas id="c2"></canvas></div>
+
+        <div class="grid-item">
+          <button class="ExploreButton"><a href="index.html">Explore Pulsating</a></button>
+        </div>
+        <div class="grid-item">
+            <button class="ExploreButton"> <a href="index.html">Explore Eruptive</a></button>
+          </div>
+        <div class="grid-item">
+          <button class="ExploreButton"> <a href="index.html">Explore Cataclysmic</a></button>
+        </div>
+      </div>
+
+        </section>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="module" src="./JS/index.js"></script>
+    </body>
+</html>
