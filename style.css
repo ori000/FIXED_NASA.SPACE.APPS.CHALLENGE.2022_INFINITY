@@ -316,3 +316,7 @@ footer
     display: inline-block;
     line-height: 1em;
   }
+
+  a {
+    text-decoration: none;
+  }
