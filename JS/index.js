@@ -130,14 +130,15 @@ const animate = () => {
   //bloomPass.strength = 2; //intensity of glow
   requestAnimationFrame(animate);
   
-  if(bloomPass.strength>10)
+  /*if(bloomPass.strength>10)
     rate=-0.1 ;
   else if(bloomPass.strength<2)
-    rate=0.1;
-  bloomPass.strength+=0.5*Math.cos(x);
-  bloomPass2.strength-=0.5*Math.cos(x);
-  x+=(0.05) + multiplier.value/1000;
- 
+    rate=0.1;*/
+  bloomPass.strength=Math.abs(10*Math.cos(x));
+  bloomPass2.strength=Math.abs(10*Math.sin(x));
+  x+=(0.05) * multiplier.value/10;
+  //x+=cepheidRate(x+ multiplier.value/1000,200);
+  //console.log(cepheidRate(x,5));
   starMesh.rotation.y += 0.01;
   camera.layers.set(1);
   bloomComposer.render();
@@ -149,6 +150,13 @@ const animate = () => {
   
   
 };
+
+function cepheidRate( t,w){
+  return 0.418*Math.sin(w*t-20.76)+0.1419*Math.sin(2*w*t-63.76)    
+  +0.0664*Math.sin(3*w*t-91.57)+0.0354*Math.sin(4*w*t-112.62)  
+  +0.020*Math.sin(5*w*t-129.47) ;
+
+}
 var multiplier = document.getElementById("slider");
 function changeRate(){
     multiplier.nextElementSibling.value= multiplier.value;
